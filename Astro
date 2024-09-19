@@ -1,0 +1,62 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local TextLabel_2 = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(52, 52, 52)
+Frame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.119486772, 0, 0.166666672, 0)
+Frame.Size = UDim2.new(0, 250, 0, 152)
+Frame.Active = true
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Size = UDim2.new(0, 250, 0, 50)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "AstroHub"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 46.000
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+TextButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0.131999999, 0, 0.427315056, 0)
+TextButton.Size = UDim2.new(0, 184, 0, 50)
+TextButton.Font = Enum.Font.SourceSansBold
+TextButton.Text = "Fast Hatch"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 31.000
+
+UICorner.Parent = TextButton
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.100000001, 0, 0.809210539, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 21)
+TextLabel_2.Font = Enum.Font.SourceSansBold
+TextLabel_2.Text = "Made by AstroScripting!"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 18.000
+
+UICorner_2.Parent = TextLabel_2
